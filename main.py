@@ -7,7 +7,7 @@ from google.oauth2.service_account import Credentials
 mcp = FastMCP("SkylarkCoordinator")
 
 # --- VERIFIED CONFIGURATION ---
-SPREADSHEET_ID = "1nLCL9cn1jAwXneKYuqnCUx9iVKBWLGM1VZFuDdbpDLc" 
+SPREADSHEET_ID = "1nLCL9cn1jAwXneKYuqnCUx9iVKBWLGM1VZFuDdbpDLc" #late add these are env 
 SERVICE_ACCOUNT_FILE = "service_account.json"
 
 def get_sheet_client():

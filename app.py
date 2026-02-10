@@ -5,14 +5,14 @@ from google import genai
 from google.genai import types
 from main import mcp 
 
-st.set_page_config(page_title="Skylark Drone AI", layout="wide", page_icon="🛸")
+st.set_page_config(page_title="Skylark Drone AI", layout="wide", page_icon="🛸") 
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
 with st.sidebar:
     st.title("🛸 System Control")
-    api_key = st.text_input("Gemini API Key", type="password")
+    api_key = st.text_input("Gemini API Key", type="password") # should remove the sidebar and make it production ready 
     if st.button("Reset Session"):
         st.session_state.messages = []
         if "chat_session" in st.session_state:
